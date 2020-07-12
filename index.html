@@ -43,9 +43,9 @@
               <time class="time" datetime="2020-06-28">28 Jun 2020</time>
             </div>
           </div>
-          <!-- Share Button -->
+          <!-- Share Button / Pop Up Social Bar -->
           <div id="share_social" class="share_social">
-            <h3>SHARE</h3>
+            <span>SHARE</span>
             <ul>
               <li>
                 <a
@@ -84,6 +84,20 @@
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Edward Leung</a>. -->
-    </div>
+    
+
+<!--JS script to toggle the button-->
+<script>
+  function showSocialBar() {
+    var x = document.getElementById("share_social");
+  
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    }
+    else {
+      x.style.display = "none";
+    }
+  }
+  </script>
   </body>
 </html>
