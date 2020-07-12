@@ -52,7 +52,7 @@ body {
 }
 
 .content {
-  grid-area: article;
+  grid-template-areas: "article";
   position: relative;
 }
 
@@ -77,4 +77,27 @@ body {
 .author_info {
   display: grid;
   grid-template-areas: "img author";
+  grid-gap: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.author_name {
+  color: var(--VeryDarkGrayishBlue);
+  font-weight: 700;
+  font-family: var(--Headings);
+  font-size: 1em;
+}
+
+.time {
+  color: var(--DesaturatedDark);
+}
+
+.share_author {
+  justify-self: end;
+  position: relative;
+  z-index: 4;
 }
