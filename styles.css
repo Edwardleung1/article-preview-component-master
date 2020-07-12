@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+:root {
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --DesaturatedDark: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayish: hsl(210, 46%, 95%);
+  --Fontsize: 13px;
+  --Headings: "Manrope", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: var(--Fontsize);
+  background-color: var(--LightGrayish);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.article {
+  background-color: #fff;
+  width: auto;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-areas: "img" "article";
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.drawers {
+  height: 200px;
+  width: 100%;
+  grid-area: img;
+}
+
+.content {
+  grid-area: article;
+  position: relative;
+}
+
+.title_article {
+  font-family: var(--Headings);
+  color: var(--VeryDarkGrayishBlue);
+  font-size: 1.3em;
+}
+
+.text_article {
+  font-family: var(--Headings);
+  color: var(--GrayishBlue);
+  font-size: 1em;
+}
+
+.author {
+  display: grid;
+  grid-template-areas: "author share";
+  grid-gap: 10px;
+}
+
+.author_info {
+  display: grid;
+  grid-template-areas: "img author";
+}
