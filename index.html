@@ -43,8 +43,19 @@
               <time class="time" datetime="2020-06-28">28 Jun 2020</time>
             </div>
           </div>
+
+          <!-- Share button-->
+          <div class="btncontainer" onclick="showSocialBar()">
+            <div class="sharebtn">
+                <img id="arrow" src="images/icon-share.svg" alt="Share">
+            </div>
+        </div>
+
+
           <!-- Share Button / Pop Up Social Bar -->
-          <div id="share_social" class="share_social">
+          <div id="share_social">
+            <div class="socialbar">
+              <div class="icon-container">
             <span>SHARE</span>
             <ul>
               <li>
@@ -74,10 +85,13 @@
                   <img src="./images/icon-pinterest.svg" alt="pinterest"
                 /></a>
               </li>
-            </ul>   
-        </div>
-      </div>
-    </main>
+            </ul>  
+          </div> <!-- end of icon-container -->
+          </div> <!-- end of socialbar -->
+
+        </div> <!-- end of share-social -->
+      </div> <!-- end of author -->
+    </main> <!-- end of article -->
 
    <!-- <div class="attribution">
       Challenge by
@@ -86,7 +100,7 @@
       >. Coded by <a href="#">Edward Leung</a>. -->
     
 
-<!--JS script to toggle the button-->
+<!--JS script to toggle the button, other way is toggle --> 
 <script>
   function showSocialBar() {
     var x = document.getElementById("share_social");
