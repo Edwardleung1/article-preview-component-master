@@ -45,73 +45,57 @@
           </div>
 
           <!-- Share button-->
-          <div class="btncontainer" onclick="showSocialBar()">
-            <div class="sharebtn">
-                <img id="arrow" src="images/icon-share.svg" alt="Share">
-            </div>
+          <div class="share_author">
+            <img
+              src="./images/icon-share.svg"
+              class="toggle"
+              id="toggle"
+              alt="share"
+            />
+          </div>
         </div>
 
+        <!-- Share Button / Pop Up Social Bar -->
+        <div id="share_social" class="share_social">
+          <h3>SHARE</h3>
+          <ul>
+            <li>
+              <a
+                class="share_social_link"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <img src="./images/icon-facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="share_social_link"
+                href="https://www.twitter.com/"
+                target="_blank"
+              >
+                <img src="./images/icon-twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="share_social_link"
+                href="https://www.pinterest.com/"
+                target="_blank"
+              >
+                <img src="./images/icon-pinterest.svg" alt="pinterest"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
-          <!-- Share Button / Pop Up Social Bar -->
-          <div id="share_social">
-            <div class="socialbar">
-              <div class="icon-container">
-            <span>SHARE</span>
-            <ul>
-              <li>
-                <a
-                  class="share_social"
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                >
-                  <img src="./images/icon-facebook.svg" alt="facebook"
-                /></a>
-              </li>
-              <li>
-                <a
-                  class="share_social"
-                  href="https://www.twitter.com/"
-                  target="_blank"
-                >
-                  <img src="./images/icon-twitter.svg" alt="twitter"
-                /></a>
-              </li>
-              <li>
-                <a
-                  class="share_social"
-                  href="https://www.pinterest.com/"
-                  target="_blank"
-                >
-                  <img src="./images/icon-pinterest.svg" alt="pinterest"
-                /></a>
-              </li>
-            </ul>  
-          </div> <!-- end of icon-container -->
-          </div> <!-- end of socialbar -->
-
-        </div> <!-- end of share-social -->
-      </div> <!-- end of author -->
-    </main> <!-- end of article -->
-
-   <!-- <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Edward Leung</a>. -->
-    
-
-<!--JS script to toggle the button, other way is toggle --> 
-<script>
-  function showSocialBar() {
-    var x = document.getElementById("share_social");
-  
-    if (x.style.display === "none") {
-      x.style.display = "flex";
-    }
-    else {
-      x.style.display = "none";
-    }
-  }
-  </script>
+    <script src="./app.js"></script>
   </body>
 </html>
